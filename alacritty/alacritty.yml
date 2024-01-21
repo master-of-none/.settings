@@ -1,0 +1,119 @@
+env:
+  # TERM env customization.
+  #
+  # If this property is not set, alacritty will set it to xterm-256color.
+  #
+  # Note that some xterm terminfo databases don't declare support for italics.
+  # You can verify this by checking for the presence of `smso` and `sitm` in
+  # `infocmp xterm-256color`.
+  TERM: xterm-256color
+# font:
+#   normal:
+#     family: Hack Nerd Font
+#     size: 26.0
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: "Rec Mono Duotone" # should be "Menlo" or something on macOS.
+    # Style can be specified to pick a specific face.
+    # style: Regular
+  # The bold font face
+  bold:
+    family: "Rec Mono Duotone" # should be "Menlo" or something on macOS.
+    # Style can be specified to pick a specific face.
+    # style: Bold
+  # The italic font face
+  italic:
+    family: "Rec Mono Duotone" # should be "Menlo" or something on macOS.
+    # Style can be specified to pick a specific face.
+    # style: Italic
+  bold_italic:
+    family: "Rec Mono Duotone"
+  # Point size of the font
+  size: 14.5
+  # Offset is the extra space around each character. offset.y can be thought of
+  # as modifying the linespacing, and offset.x as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 0
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increase the x offset to move the glyph to
+  # the right, increase the y offset to move the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+schemes:
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+  tokyo-night: &tokyo-night
+    primary: # Default colors
+      background: "#1a1b26"
+      foreground: "#a9b1d6"
+    # Normal colors
+    normal:
+      black: "#32344a"
+      red: "#f7768e"
+      green: "#9ece6a"
+      yellow: "#e0af68"
+      blue: "#7aa2f7"
+      magenta: "#ad8ee6"
+      cyan: "#449dab"
+      white: "#787c99"
+    # Bright colors
+    bright:
+      black: "#444b6a"
+      red: "#ff7a93"
+      green: "#b9f27c"
+      yellow: "#ff9e64"
+      blue: "#7da6ff"
+      magenta: "#bb9af7"
+      cyan: "#0db9d7"
+      white: "#acb0d0"
+  tokyo-night-storm: &tokyo-night-storm
+    primary: # Default colors
+      background: "#24283b"
+      foreground: "#a9b1d6"
+    # Normal colors
+    normal:
+      black: "#32344a"
+      red: "#f7768e"
+      green: "#9ece6a"
+      yellow: "#e0af68"
+      blue: "#7aa2f7"
+      magenta: "#ad8ee6"
+      cyan: "#449dab"
+      white: "#9699a8"
+    # Bright colors
+    bright:
+      black: "#444b6a"
+      red: "#ff7a93"
+      green: "#b9f27c"
+      yellow: "#ff9e64"
+      blue: "#7da6ff"
+      magenta: "#bb9af7"
+      cyan: "#0db9d7"
+      white: "#acb0d0"
+# normal dark theme
+colors: *tokyo-night
+#Window size
+window:
+  dimensions:
+    columns: 185
+    lines: 50
+  padding:
+    x: 10
+    y: 10
+
+# cursor
+cursor:
+  style:
+    shape: Underline
+  #   blinking: Always
+  # blink_interval: 500
+  unfocused_hollow: true
+  thickness: 0.15
+
+# Change shell
+shell:
+  program: /opt/homebrew/bin/fish
