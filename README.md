@@ -1,0 +1,1 @@
+Settings of my terminal
