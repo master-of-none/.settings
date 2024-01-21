@@ -1,1 +1,1 @@
-Settings of my terminal
+Settings of various tools
