@@ -1,0 +1,226 @@
+{
+    "code-runner.runInTerminal": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "latex-workshop.linting.chktex.exec.path": "/Library/TeX/texbin/chktex",
+    "debug.allowBreakpointsEverywhere": true,
+    "git.autofetch": true,
+    "git.ignoreRebaseWarning": true,
+    "editor.lineNumbers": "relative",
+    "git.confirmSync": false,
+    "explorer.confirmDragAndDrop": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName"
+    },
+    "explorer.confirmDelete": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.iconTheme": "material-icon-theme",
+    // "[python]": {
+    //     "editor.formatOnType": true,
+    //     "editor.defaultFormatter": "ms-python.autopep8"
+    // },
+    "editor.formatOnSave": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "tabnine.experimentalAutoImports": true,
+    "vsintellicode.features.python.deepLearning": "enabled",
+    "git.openRepositoryInParentFolders": "never",
+    "terminal.integrated.shellIntegration.suggestEnabled": true,
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    "typescript.experimental.tsserver.web.enableProjectWideIntellisense": true,
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "python": false,
+        "html": false,
+        "javascript": false,
+        "rust": false,
+        "typescriptreact": false,
+        "typescript": false,
+        "java": false,
+        "go": false,
+        "ocaml": false,
+        "haskell": false,
+        "ocaml.interface": false,
+        "dockerfile": false,
+        "sql": false,
+        "clojure": false
+    },
+    "leetcode.workspaceFolder": "/Users/shrikrishnabhat/Desktop/Programming/leetcode-unlocked",
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.hint.commandShortcut": false,
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.hint.commentDescription": false,
+    "files.autoSave": "onFocusChange",
+    "eslint.run": "onSave",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.tabWidth": 4,
+
+    "tailwindCSS.includeLanguages": {
+        "html": "html",
+        "javascript": "javascript",
+        "css": "css"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [],
+        "editor.selectionHighlight": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+
+    "gopls": {
+        "experimentalWorkspaceModule": true
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "[go]": {
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "golang.go"
+    },
+
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    },
+    "[ocaml]": {
+        "editor.tabSize": 4
+    },
+    "[ocamllex]": {
+        "editor.tabSize": 4
+    },
+    "[menhir]": {
+        "editor.tabSize": 4
+    },
+
+    "editor.rulers": [],
+    "redhat.telemetry.enabled": true,
+    "githubPullRequests.createOnPublishBranch": "never",
+    "githubPullRequests.fileListLayout": "tree",
+    "editor.fontLigatures": "'ss01','ss05','dlig'",
+    // Chaange the font family to your desired font
+    // "editor.fontFamily": "'Monaspace Argon', monospace",
+    "editor.fontFamily": "'Victor Mono', 'Fira Code', 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "gitlens.graph.minimap.enabled": false,
+    "haskell.formattingProvider": "fourmolu",
+    "haskell.serverEnvironment": {
+        "PATH": "${HOME}/.ghcup/bin:${PATH}"
+    },
+
+    // The below code is to make it in Italics
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    //following will be in italic (=FlottFlott)
+                    "comment",
+                    "entity.name.type.class", //class names
+                    "keyword", //import, export, return…
+                    "constant", //String, Number, Boolean…, this, super
+                    "storage.modifier", //static keyword
+                    "storage.type.class.js" //class keyword
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    //following will be excluded from italics (VSCode has some defaults for italics)
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "haskell.manageHLS": "GHCup",
+    "terminal.integrated.fontSize": 14,
+    "rust-analyzer.cargo.target": "thumbv7em-none-eabihf",
+    "rust-analyzer.checkOnSave.allTargets": false,
+    "editor.guides.bracketPairs": "active",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    // Using the light mode
+    "indentRainbow.indicatorStyle": "light",
+    // we use a simple 1 pixel wide line
+    "indentRainbow.lightIndicatorStyleLineWidth": 1,
+    // the same colors as above but more visible
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.3)",
+        "rgba(127,255,127,0.3)",
+        "rgba(255,127,255,0.3)",
+        "rgba(79,236,236,0.3)"
+    ],
+    "workbench.colorTheme": "Everforest Dark",
+    "gruvboxMaterial.darkContrast": "hard",
+    "everforest.darkContrast": "hard",
+    "diffEditor.ignoreTrimWhitespace": false
+}
