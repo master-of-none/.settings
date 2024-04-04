@@ -222,5 +222,8 @@
     "workbench.colorTheme": "Everforest Dark",
     "gruvboxMaterial.darkContrast": "hard",
     "everforest.darkContrast": "hard",
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "java.project.referencedLibraries": [
+        "/Users/shrikrishnabhat/algs4/algs4.jar"
+    ]
 }
