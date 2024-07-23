@@ -37,12 +37,45 @@ local core_plugins = {
     lazy = true,
   },
   --- Tokyo Night
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = not vim.startswith(lvim.colorscheme, "tokyonight"),
+  -- },
+
+  -- -- EverForest
+  -- {
+  --   "neanias/everforest-nvim",
+  --   lazy = not vim.startswith(lvim.colorscheme, "everforest"),
+  --   priority = 1000,
+  -- },
+  -- EverForest configuration
   {
-    "folke/tokyonight.nvim",
-    lazy = not vim.startswith(lvim.colorscheme, "tokyonight"),
+    "neanias/everforest-nvim",
+    lazy = not vim.startswith(lvim.colorscheme, "everforest"),
+    priority = 1000,
+    config = function()
+      -- Get the current hour
+      local current_hour = tonumber(os.date "%H")
+
+      -- Determine the background setting based on the time of day
+      if current_hour >= 20 or current_hour < 8 then
+        -- Set to dark mode from 8 PM to 8 AM
+        vim.o.background = "dark"
+        -- Optional: Set contrast for dark mode
+        vim.g.everforest_background = "medium" -- Set to "hard", "medium" (default), or "soft"
+      else
+        -- Set to light mode from 8 AM to 8 PM
+        vim.o.background = "light"
+        -- Set contrast for light mode
+        vim.g.everforest_background = "soft"
+      end
+
+      -- Apply the Everforest colorscheme
+      vim.cmd.colorscheme "everforest"
+    end,
   },
+
   --- Vim Be Good
-  ---
   {
     "ThePrimeagen/vim-be-good",
   },
