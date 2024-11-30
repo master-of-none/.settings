@@ -9,6 +9,7 @@
     "git.confirmSync": false,
     "explorer.confirmDragAndDrop": false,
     "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.CustomBrowser": "chrome",
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
@@ -87,7 +88,7 @@
         "scminput": false,
         "python": false,
         "html": false,
-        "javascript": false,
+        "javascript": true,
         "rust": false,
         "typescriptreact": false,
         "typescript": false,
@@ -98,14 +99,14 @@
         "ocaml.interface": false,
         "dockerfile": false,
         "sql": false,
-        "clojure": false
+        "clojure": false,
+        "c": false
     },
     "leetcode.workspaceFolder": "/Users/shrikrishnabhat/Desktop/Programming/leetcode-unlocked",
     "leetcode.defaultLanguage": "python3",
     "leetcode.hint.commandShortcut": false,
     "leetcode.hint.configWebviewMarkdown": false,
     "leetcode.hint.commentDescription": false,
-    "files.autoSave": "onFocusChange",
     "eslint.run": "onSave",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "prettier.tabWidth": 4,
@@ -135,9 +136,11 @@
         "editor.defaultFormatter": "redhat.java"
     },
     "[go]": {
-        "editor.insertSpaces": true,
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "golang.go"
+        "editor.defaultFormatter": "golang.go",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always"
+        }
     },
 
     "[rust]": {
@@ -145,7 +148,7 @@
         "editor.formatOnSave": true
     },
     "[ocaml]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 2
     },
     "[ocamllex]": {
         "editor.tabSize": 4
@@ -153,55 +156,60 @@
     "[menhir]": {
         "editor.tabSize": 4
     },
-
+    "[c]": {
+        "editor.tabSize": 4
+    },
     "editor.rulers": [],
     "redhat.telemetry.enabled": true,
     "githubPullRequests.createOnPublishBranch": "never",
     "githubPullRequests.fileListLayout": "tree",
-    "editor.fontLigatures": "'ss01','ss05','dlig'",
-    // Chaange the font family to your desired font
+    // "editor.fontLigatures": "'ss01','ss05','dlig'",
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+    // Change the font family to your desired font
     // "editor.fontFamily": "'Monaspace Argon', monospace",
-    "editor.fontFamily": "'Victor Mono', 'Fira Code', 'Courier New', monospace",
-    "editor.fontSize": 15,
+    // "editor.fontFamily": "'Victor Mono', 'Fira Code', 'Courier New', monospace",
+    "editor.fontFamily": "'Cascadia Code', 'Fira Code', 'Courier New', monospace",
+    // "editor.fontFamily": "'Recursive Mono Casual Static', 'Fira Code', 'Courier New', monospace",
+    "editor.fontSize": 16,
     "gitlens.graph.minimap.enabled": false,
     "haskell.formattingProvider": "fourmolu",
     "haskell.serverEnvironment": {
         "PATH": "${HOME}/.ghcup/bin:${PATH}"
     },
 
-    // The below code is to make it in Italics
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    //following will be in italic (=FlottFlott)
-                    "comment",
-                    "entity.name.type.class", //class names
-                    "keyword", //import, export, return…
-                    "constant", //String, Number, Boolean…, this, super
-                    "storage.modifier", //static keyword
-                    "storage.type.class.js" //class keyword
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": [
-                    //following will be excluded from italics (VSCode has some defaults for italics)
-                    "invalid",
-                    "keyword.operator",
-                    "constant.numeric.css",
-                    "keyword.other.unit.px.css",
-                    "constant.numeric.decimal.js",
-                    "constant.numeric.json"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            }
-        ]
-    },
+    // // The below code is to make it in Italics
+    // "editor.tokenColorCustomizations": {
+    //     "textMateRules": [
+    //         {
+    //             "scope": [
+    //                 //following will be in italic (=FlottFlott)
+    //                 "comment",
+    //                 "entity.name.type.class", //class names
+    //                 "keyword", //import, export, return…
+    //                 "constant", //String, Number, Boolean…, this, super
+    //                 "storage.modifier", //static keyword
+    //                 "storage.type.class.js" //class keyword
+    //             ],
+    //             "settings": {
+    //                 "fontStyle": "italic"
+    //             }
+    //         },
+    //         {
+    //             "scope": [
+    //                 //following will be excluded from italics (VSCode has some defaults for italics)
+    //                 "invalid",
+    //                 "keyword.operator",
+    //                 "constant.numeric.css",
+    //                 "keyword.other.unit.px.css",
+    //                 "constant.numeric.decimal.js",
+    //                 "constant.numeric.json"
+    //             ],
+    //             "settings": {
+    //                 "fontStyle": ""
+    //             }
+    //         }
+    //     ]
+    // },
     "haskell.manageHLS": "GHCup",
     "terminal.integrated.fontSize": 14,
     "rust-analyzer.cargo.target": "thumbv7em-none-eabihf",
@@ -219,11 +227,17 @@
         "rgba(255,127,255,0.3)",
         "rgba(79,236,236,0.3)"
     ],
-    "workbench.colorTheme": "Everforest Dark",
+    "indentRainbow.excludedLanguages": ["plaintext", "ocaml", "dune"],
     "gruvboxMaterial.darkContrast": "hard",
     "everforest.darkContrast": "hard",
     "diffEditor.ignoreTrimWhitespace": false,
     "java.project.referencedLibraries": [
         "/Users/shrikrishnabhat/algs4/algs4.jar"
-    ]
+    ],
+    "javascript.suggest.completeFunctionCalls": true,
+    "files.autoSave": "afterDelay",
+    "files.associations": {
+        "*.c": "c"
+    },
+    "workbench.colorTheme": "Everforest Dark"
 }
