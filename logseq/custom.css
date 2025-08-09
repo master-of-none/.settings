@@ -1,1 +1,11 @@
+:root {
+  --ls-font-family: "FiraCode Nerd Font", monospace;
+}
 
+html, body {
+  font-family: "FiraCode Nerd Font", monospace !important;
+}
+
+code, pre {
+  font-family: "FiraCode Nerd Font", monospace !important;
+}
